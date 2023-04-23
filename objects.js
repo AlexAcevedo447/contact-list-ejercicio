@@ -2,9 +2,10 @@
 //sus propiedades se definen con la palabra reservada this
 //solo se pueden crear funciones constructoras por medio de la funcion como expresion
 
-function Contacto(nombre_completo, telefono, localizacion) {
+function Contacto(id, nombre_completo, telefono, localizacion) {
     const { ciudad, departamento } = localizacion;
 
+    this.id = id;
     this.nombre_completo = nombre_completo;
     this.telefono = telefono;
     this.localizacion = {
